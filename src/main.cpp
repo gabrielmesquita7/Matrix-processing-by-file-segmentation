@@ -1,8 +1,13 @@
 #include "matriz.hpp"
 
-int main(){
+int main()
+{
+    EscreveMatrizG();
+    vector<int> teste = ler_coords();
 
-    cout << "teste" << endl;
-
+    for (auto &i : teste)
+    {
+        cout << i << "\t";
+    }
     return 0;
 }
