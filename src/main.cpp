@@ -2,22 +2,65 @@
 
 int main()
 {
+    int xi, yi, xj, yj, op = 0, op2;
     EscreveMatrizG();
-    int xi, yi, xj, yj;
-    vector<int> coord = ler_coords();
-    xi = coord[0];
-    yi = coord[1];
-    xj = coord[2];
-    yj = coord[3];
-    int M = (xj - xi) + 1; // MATRIZ DINAMICA
-    int N = (yj - yi) + 1; //       M*N
-    int **A = ler_matriz(xi, yi, xj, yj);
-    for (int i = 0; i < M; i++)
+
+    while (op != 2)
     {
-        for (int j = 0; j < N; j++)
+        cout << "------------------------" << endl;
+        cout << "MENU:" << endl;
+        cout << "1->Realizar novo calculo" << endl;
+        cout << "2->Sair..." << endl;
+        cout << "-> ";
+        cin >> op;
+        cout << "------------------------" << endl;
+        switch (op)
         {
-            std::cout << A[i][j] << " ";
+        case 1:
+            cout << "------------------------" << endl;
+            cout << "0)Ler coordenadas.txt\n1)Digitar coordenadas\n-> ";
+            cin >> op2;
+            cout << "------------------------" << endl;
+            if (op2 == 0)
+            {
+                readtxt(xi, yi, xj, yj);
+            }
+            else if (op2 == 1)
+            {
+                cout << "Digite as coordenadas para verificacao: " << endl;
+                cout << "xi = ";
+                cin >> xi;
+                cout << "yi = ";
+                cin >> yi;
+                cout << "xj = ";
+                cin >> xj;
+                cout << "yj = ";
+                cin >> yj;
+                cout << "------------------------" << endl;
+                int M = (xj - xi) + 1;
+                int N = (yj - yi) + 1;
+                if (M <= 0 || N <= 0)
+                {
+                    cout << "Error! Dimensao negativa da matriz" << endl;
+                    break;
+                }
+                hash_storage(xi, yi, xj, yj);
+            }
+            else
+            {
+                cout << "Opcao invalida" << endl;
+                break;
+            }
+
+            break;
+        case 2:
+            cout << "Finalizando..." << endl;
+            abort();
+            break;
+        default:
+            break;
         }
-        std::cout << std::endl;
     }
+
+    return 0;
 }
