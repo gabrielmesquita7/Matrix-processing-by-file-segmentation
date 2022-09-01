@@ -78,8 +78,18 @@
 
 
 # Saida
-### É esperado que o usuario seja informado do tempo em que a matriz foi gerada e seja direcionado ao seguinte menu:
-
+### É esperado que o usuario seja informado do tempo em que a matriz (Ex: 10 x 10) foi gerada e seja direcionado ao seguinte menu:
+![Captura de tela de 2022-09-01 17-47-20](https://user-images.githubusercontent.com/55333375/188009695-d01f6f56-14c9-4547-bdc5-a72d65bdea46.png)
+### Selecionando a primeira opção o usuário é direcionado a um novo menu:
+![Captura de tela de 2022-09-01 17-50-59](https://user-images.githubusercontent.com/55333375/188010154-e570a185-788b-4500-ba91-e3141767255d.png)
+### Feito a escolha **0** o programa fará a leitura das coordenadas do arquivo .txt (:
+![image](https://user-images.githubusercontent.com/55333375/188010591-62a40813-9cd0-41e2-a8d0-e1d2dc7af12b.png)
+### Feito a escolha **1** será solicitado ao usuário as coordenadas:
+![Captura de tela de 2022-09-01 17-59-16](https://user-images.githubusercontent.com/55333375/188011919-4c7cc6c1-5333-4d50-8793-3823c72feb08.png)
+### Caso a coordenada (transformada em key) lida ou digitada pelo usuário for igual a alguma armazenada dentro da hash será informado com a seguinte mensagem e impresso o resultado armazenado: 
+![Captura de tela de 2022-09-01 18-05-42](https://user-images.githubusercontent.com/55333375/188012977-931b0349-254a-445c-a37b-c90536b8a131.png)
+### O menu será executado em loop até o usuário digitar a opção de sair.
+![Captura de tela de 2022-09-01 18-09-48](https://user-images.githubusercontent.com/55333375/188013650-3b6fc63c-61f7-46a7-a2ce-0549ee160ce5.png)
 
 
 # Executar
@@ -97,5 +107,4 @@
     </tr>
     <tr>
 </table>
-
 </html>
