@@ -224,8 +224,9 @@ void printMatriz(int xi, int xj, int **m)
     }
 }
 
-void readtxt(int xi, int yi, int xj, int yj)
+void readtxt()
 {
+    int xi, yi, xj, yj;
     vector<int> coord = ler_coords();
     xi = coord[0];
     yi = coord[1];

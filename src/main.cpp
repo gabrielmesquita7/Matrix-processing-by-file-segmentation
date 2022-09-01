@@ -3,8 +3,11 @@
 int main()
 {
     int xi, yi, xj, yj, op = 0, op2;
+    chrono::steady_clock::time_point begin = chrono::steady_clock::now();
     EscreveMatrizG();
-
+    chrono::steady_clock::time_point end = chrono::steady_clock::now();
+    cout << "------------------------" << endl;
+    cout << "Matriz foi criada em " << chrono::duration_cast<chrono::milliseconds>(end - begin).count() << "[ms]" << endl;
     while (op != 2)
     {
         cout << "------------------------" << endl;
@@ -23,7 +26,7 @@ int main()
             cout << "------------------------" << endl;
             if (op2 == 0)
             {
-                readtxt(xi, yi, xj, yj);
+                readtxt();
             }
             else if (op2 == 1)
             {
